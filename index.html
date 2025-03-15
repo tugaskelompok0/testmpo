@@ -33,6 +33,17 @@
         <p><strong>Lokasi:</strong> Jakarta, Prestasi Prima</p>
         <div id="map"></div>
     </section>
+
+    <iframe 
+    id="map"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126917.54439457635!2d106.72185705190216!3d-6.208763364643538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1c5e33a43b9%3A0x2a04e4a7aa8b61bb!2sJakarta!5e0!3m2!1sen!2sid!4v1712345678901!5m2!1sen!2sid" 
+    width="100%" 
+    height="300" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy">
+    </iframe>
+
     
     <section id="gallery">
         <h2>Galeri Foto</h2>
@@ -45,12 +56,20 @@
     
     <section id="rsvp">
         <h2>Konfirmasi Kehadiran</h2>
-        <form>
-            <input type="text" placeholder="Nama Anda" required>
-            <input type="number" placeholder="Jumlah Tamu" required>
+        <form id="rsvp-form">
+            <input type="text" id="nama" placeholder="Nama Anda" required>
+            <input type="number" id="jumlah" placeholder="Jumlah Tamu" required>
+            <select id="kehadiran" required>
+                <option value="Pilih Kehadiran">Pilih Kehadiran</option>
+                <option value="Hadir">✅ Hadir</option>
+                <option value="Tidak Bisa Hadir">❌ Tidak bisa hadir</option>
+                <option value="Masih Ragu">❓ Masih ragu</option>
+            </select>
             <button type="submit">Kirim</button>
         </form>
+        <p id="thank-you-message" style="display: none; color: green;"></p>
     </section>
+    
     
     <a id="whatsapp" href="https://wa.me/nomor_anda" target="_blank">Hubungi Kami di WhatsApp</a>
 
