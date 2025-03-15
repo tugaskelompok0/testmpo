@@ -16,6 +16,33 @@ body {
     to { opacity: 1; }
 }
 
+#music-control {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #e91e63;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out;
+}
+
+#music-control:hover {
+    background: #d81b60;
+}
+
+#play-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
 #hero {
     background: url('foto (3).jpeg') no-repeat center center;
     background-size: cover;
